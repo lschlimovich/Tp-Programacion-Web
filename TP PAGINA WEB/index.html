@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Calendario</title>
+</head>
+
+<style>
+    header {
+    background-color: Thistle;
+    color: white;
+    text-align: center;
+    padding: 25px 0; 
+    font-size: 30px; 
+    font-style: Delius; /*cambiar, no funciona --> descargar */
+    font-weight: 500;
+    letter-spacing: 1px;
+    } 
+    
+    nav {
+        width: 100%;
+        background-color: Purple; /* color de fondo del nav */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-btn {
+        background-color: darkmagenta; /* color de los cuadrados */
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        border-radius: 10px;
+        width: 150px;
+        font-weight: bold;
+    }
+</style>
+<header>
+    <h1>Mi calendario</h1>
+</header>
+<body>
+    <nav>
+    <a href="#verCalendario" class="nav-btn">Ver mi calendario</a>
+    <a href="#agregarEvento" class="nav-btn">Agregar evento</a>
+    <a href="#editarEvento" class="nav-btn">Editar evento</a>
+    <a href="#eliminarEvento" class="nav-btn">Eliminar evento</a>
+    </nav>
+
+    <div id="agregarEvento">
+        <h4>Agregar Evento:</h4>
+        <input type="date" id="datehtml" placeholder="Add datetime">
+        <input type="checkbox" id="diaCompletohtml"> Dia completo?
+        <input type="checkbox" id="diaCompletohtml"> Seleccionar Horario
+    </div>
+    <div id="editarEvento">
+        <h4>Editar Evento:</h4>
+        <input type="date" id="datehtml">
+        <!-- Aca preguntaria si quiere buscar por nombre o por dia -->
+        <input type="text" id="txtAEditar" placeholder="Texto evento a editar">
+        <input type="button" id="btnEditar" value="Guardar edicion">
+
+    <div id="eliminarEvento"></div>
+        <h4>Eliminar Evento:</h4>
+        <!-- Deberia seleccionar una fecha y el evento, si no lo encuentra lo notifica como que 
+        no existe ese evento ese dia y si existe lo borra -->
+        <input type="date" id="datehtml">
+
+    </div>
+
+    <table>
+        <!-- Armar con un buen formato la tabla:
+        - Seleccionar mes con select options y seleccionar año con input number? (ver que conviene) -->
+    </table>
+
+
+</body>
+<script  src='./capturarhtml.js'></script> 
+</html>
+
+

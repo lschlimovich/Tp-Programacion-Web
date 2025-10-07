@@ -74,11 +74,78 @@
 // Escribe una función que tome un número como argumento y retorne su factorial. 
 // Utiliza una estructura if para manejar el caso base.
 
-function factorial (n) {
-    for (i<n) {
-        
-    }
+// function factorial (n) {
+//     let mult = n
+//     for (let i=1;i<n;i++) {
+//         mult *= i
+//     }
+//     console.log(mult)
+// }
+// factorial(5)
 
 
-}
+// Escribí un código esPasswordValida(p) que retorne true si p tiene ≥8 caracteres, al menos un número y una mayúscula 
+// (usá lógicos).
 
+// p="esValido0"
+// function esPasswordValida(p){
+//     return p.length >= 8 && /\d/.test(p) && /[A-Z]/.test(p)
+// }
+
+// console.log(esPasswordValida(p))
+
+//  Escribí un código esPar(n) que use % y ? : para retornar true si es par, false si es impar.
+// Escribí un código que, dado un array de números, imprima con forEach si cada uno es par o impar.
+
+// function esPar(n){
+//     return n%2===0 ? "es Par":"es impar"
+// }
+
+// let nums=[1,2,3,4,5,6,7,8,9,10]
+
+// nums.forEach(function(num) {
+//     console.log(`El número ${num} ${esPar(num)}`)
+// })
+
+//  16. find (>20)
+//  Escribí un código que encuentre con find el primer número > 20.
+
+// let numeros = [3,55,66,7,8,9,7,5,333,2,1,40]
+
+// let resultado = numeros.find(function(num){ 
+//     return num > 20
+// })
+// console.log(resultado)
+
+//  17. some (≥18)
+//  Escribí un código que verifique con some si hay al menos una edad ≥18.
+
+// let edades = [3,55,66,7,8,9,7,5,333,2,1,40]
+
+// let rtdo = edades.find(function(num){ 
+//     return num >= 18
+// })
+// console.log(rtdo)
+
+
+// //  Escribí un código que verifique con every si todos los elementos de un array son strings.
+
+// let lst=["hola","esto","no","son",7,'str']
+// let rtdo=lst.every(function(elemento){
+//     return typeof elemento === "string"
+// })
+// console.log(rtdo)
+
+// Escribí un código que, dado un array de personas {nombre, edad}, cree con map un array solo de nombres.
+
+let info=[
+    {nombre: 'Lucia', edad: 18},
+    {nombre:'Sabrina',edad: 16},
+    {nombre:'Romina',edad: 49}, 
+    {nombre:'Guido',edad:50}]
+
+let nombres=info.map(function(elem){
+    return elem.nombre
+})
+
+console.log(nombres)

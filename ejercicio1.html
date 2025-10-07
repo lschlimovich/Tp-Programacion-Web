@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+</head>
+<body>
+    <h4>Informacion del libro:</h4>
+    <input type="text" id="titulohtml" placeholder="Titulo">
+    <input type="text" id="autorhtml" placeholder="Autor">
+    <input type="number" id="aniohtml" placeholder="Año de publicacion">
+    <input type="text" id="generohtml" placeholder="Género del libro">
+    <input type="checkbox" id="leidohtml"> Leído? 
+    <input type="button" id="btnGuardar" value="Guardar info del libro">
+    <br></br>
+    <input type="text" id="idEliminadohtml" placeholder="Id libro que desea eliminar">
+    <input type="button" id="btnEliminar" value="Eliminar info del libro">
+    <br></br>
+    <input type="text" id="marcarLeidohtml" placeholder="Id libro a marcar como leido">
+    <input type="button" id="btnMarcarLeido" value="Marcar como leido">
+    <br></br>
+    <input type="text" id="filtrarGenerohtml" placeholder="Ingrese un genero">
+    <input type="button" id="btnFiltrarGenero" value="Filtrar por genero">
+    <br></br>
+    <input type="text" id="filtrarTitulohtml" placeholder="Ingrese un titulo">
+    <input type="button" id="btnFiltrarTitulo" value="Buscar titulo">
+    <br></br>
+    <input type="button" id="btnMostrarTodo" value="Mostrar todos los libros">
+    <br></br>
+    <input type="number" id="anioIniciohtml" placeholder="Año Inicio">
+    <input type="number" id="anioFinhtml" placeholder="Año fin">
+    <input type="button" id="btnRangoAnios" value="Armar rango de libros">
+    <h3>INFORMACIÓN LIBROS INGRESADOS</h3>
+    <table id="tablaLibros"> 
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Año</th>
+            <th>Género</th>
+            <th>Leído</th>
+            </tr>
+            </thead>
+        <tbody></tbody>
+    </table>
+<script src="./ejercicio1.js"></script>
+</body>
+</html>
